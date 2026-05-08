@@ -80,8 +80,8 @@ tr:hover td{background:#fafafa}
 <div class="ask-bar">
   <div class="ask-icon">&#10022;</div>
   <div class="ask-text">
-    <div class="prompt">Ask me anything across Lear's Seating, E-Systems, and enterprise operations...</div>
-    <div class="hint">"What's the latest E-Systems margin trend and Q2 outlook vs. target?" &middot; "Summarize the ComfortMax launch status across GM platforms this quarter" &middot; "Which conquest opportunities are at risk of missing the Q3 quoting deadline?"</div>
+    <div class="prompt">Ask me anything across Lear&rsquo;s Seating, E-Systems, and enterprise operations&hellip;</div>
+    <div class="hint">&ldquo;What&rsquo;s the latest E-Systems margin trend and Q2 outlook vs. target?&rdquo; &middot; &ldquo;Summarize the ComfortMax launch status across GM platforms this quarter&rdquo; &middot; &ldquo;Which conquest opportunities are at risk of missing the Q3 quoting deadline?&rdquo;</div>
   </div>
 </div>
 
@@ -213,6 +213,7 @@ tr:hover td{background:#fafafa}
 
 <script>
 window.addEventListener('load', function() {
+
 var c1 = echarts.init(document.getElementById('revTrendChart'),null,{renderer:'canvas'});
 c1.setOption({tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},legend:{bottom:0,textStyle:{fontSize:10,color:'#86868b'},itemWidth:12,itemHeight:8},grid:{left:50,right:16,top:16,bottom:40},xAxis:{type:'category',data:["Q1'24","Q2'24","Q3'24","Q4'24","Q1'25","Q2'25","Q3'25","Q4'25","Q1'26"],axisLabel:{fontSize:10,color:'#86868b'},axisLine:{lineStyle:{color:'#e8e8ed'}}},yAxis:{type:'value',axisLabel:{formatter:'${value}B',fontSize:10,color:'#86868b'},splitLine:{lineStyle:{color:'#f0f0f2'}},axisLine:{show:false}},series:[{name:'Seating',type:'bar',stack:'rev',barWidth:28,data:[4.2,4.4,4.3,4.4,4.3,4.4,4.3,4.3,4.4],itemStyle:{color:'#003087'}},{name:'E-Systems',type:'bar',stack:'rev',barWidth:28,data:[1.5,1.6,1.5,1.4,1.5,1.5,1.4,1.6,1.5],itemStyle:{color:'#0057B8',borderRadius:[4,4,0,0]}}]});
 
